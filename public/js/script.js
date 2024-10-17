@@ -38,8 +38,10 @@ function submitLogin() {
         console.log("Response data: ", data);
         messageElement.innerText = data.message;
         
-        document.getElementById('usernameDisplayTh').innerText = `Username: ${data.displayname_th}`;
-        document.getElementById('usernameDisplayEn').innerText = `Username: ${data.displayname_en}`;
+        document.getElementById('usernameDisplayTh').innerText = `Username TH: ${data.displayname_th}`;
+        document.getElementById('usernameDisplayEn').innerText = `Username EN: ${data.displayname_en}`;
+        document.getElementById('usernameDisplayStatus').innerText = `Status: ${data.tu_status}`;
+        document.getElementById('usernameDisplayDepartment').innerText = `Department: ${data.department}`;
         credentialsDisplay.style.display = 'block';
     })
     .catch(error => {

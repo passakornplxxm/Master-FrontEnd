@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        
+    </style>
 </head>
 <body>
     <div class="login-container">
@@ -12,12 +15,20 @@
         <form id="loginForm">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
+            
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
+            
             <button type="button" onclick="submitLogin()">Login</button>
-            <button type="button" onclick="call_REST_API_Hello()">Hello</button>
+            
         </form>
         <p id="message"></p>
+        <div id="credentialsDisplay">
+            <div class="credentials-title">Sent Credentials:</div>
+            <div class="credential-item" id="usernameDisplayTh"></div>
+            <div class="credential-item" id="usernameDisplayEn"></div>
+            
+        </div>
     </div>
     <script src="js/script.js"></script>
 </body>

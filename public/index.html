@@ -15,22 +15,26 @@
         <form id="loginForm">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
-            
+            <span class="error" id="username-error"></span>
+
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-            
-            <button type="button" onclick="submitLogin()">Login</button>
-            
+            <span class="error" id="password-error"></span>
+
+            <button type="button" id="loginButton">Login</button>
         </form>
-        <p id="message"></p>
-        <div id="credentialsDisplay">
-            <div class="credentials-title">Sent Credentials:</div>
-            <div class="credential-item" id="usernameDisplayTh"></div>
-            <div class="credential-item" id="usernameDisplayEn"></div>
-            <div class="credential-item" id="usernameDisplayStatus"></div>
-            <div class="credential-item" id="usernameDisplayDepartment"></div>
+
+        <div id="message"></div>
+
+        <div id="credentialsDisplay" class="credentials-display">
+            <h3>Sent Credentials:</h3>
+            <p id="usernameDisplayTh"></p>
+            <p id="usernameDisplayEn"></p>
+            <p id="usernameDisplayStatus"></p>
+            <p id="usernameDisplayDepartment"></p>
         </div>
     </div>
+
     <script src="js/script.js"></script>
 </body>
 </html>
